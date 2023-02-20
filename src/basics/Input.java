@@ -13,7 +13,7 @@ public class Input {
         System.out.println("Please enter your age");
         int age = scanner.nextInt();
 
-        System.out.println("Nice to meet you" + name);
+        System.out.println("Your name is" + name );
         System.out.println("You are" + age + "years old");
     }
 }

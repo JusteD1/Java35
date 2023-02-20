@@ -36,10 +36,9 @@ public class IfStatements {
             System.out.println("You have failed the test");
         } else {
             System.out.println("You have passed the test");
-
-
         }
-
+    }
+}
         //Print comments about grades:
         // 1- 3 --> "Very bad"
         // 4- 5 --> "Okey"
@@ -47,16 +46,6 @@ public class IfStatements {
         // 7- 10 --> "Very good"
         // If not in the range 1-10 --> "Invalid input"
 
-        if(grade >=1 && <=3) {
-            System.out.println("Very bad");
-         } else if(grade ==4 || grade ==5) {
-            System.out.println("Okey");
-         } else if(grade == 6) {
-            System.out.println("Nice");
-         } else if(grade > 6 && grade < 11) {
-            System.out.println("Very good");
-         } else {
-            System.out.println("Invalid input");
-         }
 
-         }
+
+
