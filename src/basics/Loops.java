@@ -16,5 +16,19 @@ public class Loops {
             System.out.print(i + " ");
         }
 
-    }
+        //While loop
+        int i = 1;
+        while(i <= 10){
+            System.out.println("This is while loop" + i);
+            i++;
+        }
+
+        //Do while loop
+        i = 1;
+        do{
+            System.out.println("This is do while loop" + i);
+            i++;
+        }while(i <= 10);
+
+        }
 }

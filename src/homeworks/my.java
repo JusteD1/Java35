@@ -1,4 +1,4 @@
-package homeworks.HW4;
+package homeworks;
 
 import java.util.Scanner;
 
@@ -19,17 +19,15 @@ public class my {
         System.out.println("Please enter second number");
         int num2 = scanner.nextInt();
 
-        int intValue = 0;
+        int intValue = num1 = num2;
         boolean boolValue;
 
-        if(intValue >=1){
+        if((num1 >= 1 && num2 >= 1) || (num1 < 1 && num2 < 1)){
             boolValue = true;
-        } else{
+        } else {
             boolValue = false;
         }
-
-
-
+        System.out.println(boolValue);
 
     }
 }
