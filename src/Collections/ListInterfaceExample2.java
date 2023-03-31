@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class ListInterfaceExample2 {
     public static void main(String[] args) {
@@ -37,6 +38,31 @@ public class ListInterfaceExample2 {
         for (String str: arrayList){
             System.out.println(str);
         }
+
+        //LinkedList
+        LinkedList<String> car = new LinkedList<>();
+        car.add("Audi");
+        car.add("Opel");
+        car.add("Toyota");
+        System.out.println(car);
+
+        //Last element
+        System.out.println(car.get(car.size()- 1));
+        System.out.println(car.getLast());
+
+        //First element
+        System.out.println(car.get(0));
+        System.out.println(car.getLast());
+
+        //Create a new LinkedList object (Integer)
+        // Populate the list with values from 1 to 100
+        // Print all elements in the console
+        LinkedList<Integer> numbers = new LinkedList<Integer>();
+        for (int i =1; i <= 100; i++ ){
+            numbers.add(i);
+        }
+        System.out.println(numbers);
+
 
     }
 }
