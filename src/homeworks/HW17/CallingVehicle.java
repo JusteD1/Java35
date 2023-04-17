@@ -16,28 +16,18 @@ public class CallingVehicle {
         System.out.println("Please enter passengers");
         int passengers = scanner.nextInt();
 
-
-
         Vehicle vehicle = new Vehicle(fuel, fuelUsage, passengers);
         vehicle.maxDistance();
 
+        System.out.println("Will your A/C will be turned on? y/n");
+        char input = scanner.next().toLowerCase().charAt(0);
+        boolean airConditionerOn = true;
+        if (input == 'y'){
+            airConditionerOn = true;
+        }
 
-
-        System.out.println("Will you turn on air conditioner? y/n");
-        //System.out.println("Will you turn on A/C?true/false");
-        boolean airConditioner = true;
-        airConditioner = scanner.nextBoolean();
-        //char turnOn = 'y';
-
-        Car1 car1 = new Car1(fuel,fuelUsage,passengers, airConditioner);
+        Car1 car1 = new Car1(fuel,fuelUsage,passengers, airConditionerOn);
         car1.maxDistance();
-
-        /*turnOn = scanner.next().charAt(0);
-        while (turnOn == 'y'){
-            car1.maxDistance();
-            break;
-        }*/
-
         }
 
     }
